@@ -1,10 +1,12 @@
 # Урок 74-78. Kubernetes 
 
+## Команды
+
 pipenv install grpcio==1.42.0 flask gunicorn keras-image-helper
 pipenv install tensorflow protobuf==3.19
 
 
-# To get read off sudo before docker 
+### To get read off sudo before docker 
 sudo usermod -aG docker <your-username>
 newgrp docker
 
@@ -18,7 +20,7 @@ docker build -t ai-lesson-gateway:001 -f image-gateway.dockerfile .
 docker run -it --rm -p 9696:9696 ai-lesson-gateway:001
 
 
-# Docker compose
+### Docker compose
 
 sudo chmod +x docker-compose
 
@@ -36,7 +38,7 @@ kubectl get service
 kubectl get pod
 kubectl get deployment
 
-# add deployment
+### add deployment
 sudo kubectl apply -f deployment.yaml
 sudo kubectl get deployment
 sudo kubectl get pod
@@ -48,7 +50,7 @@ kubectl port-forward ping-deployment-7795dd4bc5-pvbfj 9696:9696
 kubectl apply -f service.yaml
 kubectl port-forward service/ping 8080:80
 
-# Deploy clothing model to kuber
+### Deploy clothing model to kuber
 
 kind load docker-image zoomcamp-10-model:xception-v4-001
 
