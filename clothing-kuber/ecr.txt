@@ -1,0 +1,15 @@
+ACCOUNT_ID=647677696628
+REGION=ap-southeast-1
+REGISTRY_NAME=ai-lesson-kuber-images
+PREFIX=${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${REGISTRY_NAME}
+
+GATEWAY_LOCAL=ai-lesson-gateway:001
+GATEWAY_REMOTE=${PREFIX}:ai-lesson-gateway-001
+sudo docker tag ${GATEWAY_LOCAL} ${GATEWAY_REMOTE}
+
+MODEL_LOCAL=ai-lesson-clothing-model:xception-v4-001
+MODEL_REMOTE=${PREFIX}:ai-lesson-clothing-model-xception-v4-001
+sudo docker tag ${MODEL_LOCAL} ${MODEL_REMOTE}
+
+aws ecr get-login-password --region ap-southeast-1 | sudo docker login --username AWS --password-stdin 647677696628.dkr.ecr.ap-southeast-1.amazonaws.com
+
