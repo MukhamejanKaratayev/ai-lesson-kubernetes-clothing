@@ -1,4 +1,6 @@
-# Урок 74-78. Kubernetes 
+# Урок 74-78. Kubernetes
+
+## [Ссылка на файл модели](https://github.com/user/repo/blob/branch/other_file.md)
 
 ## Команды
 
