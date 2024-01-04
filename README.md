@@ -1,3 +1,5 @@
+# Урок 74-78. Kubernetes 
+
 pipenv install grpcio==1.42.0 flask gunicorn keras-image-helper
 pipenv install tensorflow protobuf==3.19
 
