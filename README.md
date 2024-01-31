@@ -1,6 +1,6 @@
 # Урок 74-78. Kubernetes
 
-## [Ссылка на файл модели](https://github.com/user/repo/blob/branch/other_file.md)
+## [Ссылка на файл модели](https://drive.google.com/file/d/1kogooQ2oFldOW5Ud2pgGCyWCxTWYilWk/view?usp=sharing)
 
 ## Команды
 
